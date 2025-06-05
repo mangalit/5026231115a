@@ -72,7 +72,7 @@ Route::get('validasi1', function () {
 });
 
 Route::get('ets', function () {
-	return view('index');
+	return view('index1');
 });
 
 Route::get('frontend', function () {
