@@ -43,7 +43,7 @@
                 <label class="control-label"> </label>
             </div>
             <div class="col-6">
-                <textarea name="alamat" required="required"> class="form-control"</textarea>
+                <textarea name="alamat" required="required"></textarea class="form-control">
             </div>
         </div>
 
