@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(to top, #1f232f 0%, #818c9b 100%);
+    color: white;
+    text-align: center;
+    padding-top: 65px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+.profile-menu-btn {
+    position: absolute;
+    top: -38px;
+    right: calc(50% - 280px);
+    background-color: #585e67;
+    color: rgb(230, 230, 230);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    z-index: 10;
+    font-size: 12px;
+}
+
+
+.profile-menu-btn:hover {
+    background-color: #626973;
+}
+
+.profile-pic {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.link-button {
+    margin: 8px;
+    width: 580px;
+}
+
+.btn-custom {
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.btn-img-left {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0px;
+}
+
+.btn-text {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+  }
+
+.btn-icon-right {
+    font-size: 12px;
+    margin-left: 33px;
+    margin-right: 10px;
+    color: #b9b9b9;
+}
+
+.join-btn-container {
+    margin-top: 140px;
+}
+
+.btn-join {
+    display: inline-block;
+    background-color: #ccccccf3;
+    color: black;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.btn-join:hover {
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-linktree {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+}
