@@ -2,48 +2,48 @@
 
 @section('content')
 
-    <h3>Data Pegawai</h3>
+    <h3>Data Sepeda</h3>
 
-    <a href="/pegawai"> Kembali</a>
+    <a href="/sepeda"> Kembali</a>
 
     <br />
     <br />
     {{-- action mengarah ke pegawai/store untuk dilakukan routing --}}
-    <form action="/pegawai/store" method="post">
+    <form action="/sepeda/store" method="post">
         {{ csrf_field() }}
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Nama </label>
+                <label class="control-label">Merk </label>
             </div>
             <div class="col-6">
-                <input type="text" name="nama" required="required" class="form-control">
+                <input type="text" name="merk" required="required" class="form-control">
             </div>
         </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Jabatan </label>
+                <label class="control-label">Harga (Rp) </label>
             </div>
             <div class="col-6">
-                <input type="text" name="jabatan" required="required" class="form-control">
+                <input type="number" name="harga" required="required" class="form-control">
             </div>
         </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Umur </label>
+                <label class="control-label">Tersedia </label>
             </div>
             <div class="col-6">
-                <input type="number" name="umur" required="required" class="form-control">
+                <input type="text" name="tersedia" required="required" class="form-control">
             </div>
         </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Alamat </label>
+                <label class="control-label">Berat (kg) </label>
             </div>
             <div class="col-6">
-                <textarea name="alamat" required="required" class="form-control"></textarea>
+                <input type="number" name="berat_kg" required="required" class="form-control">
             </div>
         </div>
         <input type="submit" value="Simpan Data" class="btn btn-success">

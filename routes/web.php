@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\SepedaController;
 //import java.io;
 
 
@@ -101,3 +102,13 @@ Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+//route sepeda
+Route::get('/sepeda', [SepedaController::class, 'indexsepeda']);
+Route::get('/sepeda/tambah', [SepedaController::class, 'tambahsepeda']);
+Route::post('/sepeda/store', [SepedaController::class, 'storesepeda']); //jika form dikirim, route ini akan dijalankan
+Route::get('/sepeda/edit/{id}',[SepedaController::class, 'editsepeda']);
+Route::post('/sepeda/update',[SepedaController::class, 'updatesepeda']);
+Route::get('/sepeda/hapus/{id}', [SepedaController::class, 'hapussepeda']);
+
+Route::get('/sepeda/cari', [SepedaController::class, 'carisepeda']);
