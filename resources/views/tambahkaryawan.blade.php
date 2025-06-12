@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h3>Data Karyawan</h3>
+    <h3>Data Sepeda</h3>
 
     <a href="/karyawan"> Kembali</a>
 
@@ -13,37 +13,37 @@
         {{ csrf_field() }}
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Nama </label>
+                <label class="control-label">Kode Pegawai</label>
             </div>
             <div class="col-6">
-                <input type="text" name="nama" required="required" class="form-control">
+                <input type="text" name="kodepegawai" required="required" class="form-control">
             </div>
         </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Jabatan </label>
+                <label class="control-label">Nama Lengkap</label>
             </div>
             <div class="col-6">
-                <input type="text" name="jabatan" required="required" class="form-control">
+                <input type="text" name="namalengkap" required="required" class="form-control">
             </div>
         </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Umur </label>
+                <label class="control-label">Divisi</label>
             </div>
             <div class="col-6">
-                <input type="number" name="umur" required="required" class="form-control">
+                <input type="text" name="divisi" required="required" class="form-control">
             </div>
         </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
-                <label class="control-label">Alamat </label>
+                <label class="control-label">Departemen</label>
             </div>
             <div class="col-6">
-                <textarea name="alamat" required="required" class="form-control"></textarea>
+                <input type="text" name="departemen" required="required" class="form-control">
             </div>
         </div>
         <input type="submit" value="Simpan Data" class="btn btn-success">

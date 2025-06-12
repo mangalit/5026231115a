@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SepedaController;
+use App\Http\Controllers\KaryawanController;
 //import java.io;
 
 
@@ -94,7 +95,7 @@ Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
 //route pegawaiDB
-Route::get('/pegawai', [PegawaiDBController::class, 'index']);
+Route::get('/pegawai', [PegawaiDBController::class, 'indexpegawai']);
 Route::get('/pegawai/tambah', [PegawaiDBController::class, 'tambah']);
 Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
@@ -112,3 +113,9 @@ Route::post('/sepeda/update',[SepedaController::class, 'updatesepeda']);
 Route::get('/sepeda/hapus/{id}', [SepedaController::class, 'hapussepeda']);
 
 Route::get('/sepeda/cari', [SepedaController::class, 'carisepeda']);
+
+//route karyawan
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambahkaryawan']);
+Route::post('/karyawan/store', [KaryawanController::class, 'storekaryawan']); //jika form dikirim, route ini akan dijalankan
+Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'hapuskaryawan']);
