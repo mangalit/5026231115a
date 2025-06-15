@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class PegawaiDBController extends Controller
 {
-    public function index()
+    public function indexpegawai()
     {
     	// mengambil data dari table pegawai
     	//$pegawai = DB::table('pegawai')->get();
