@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SepedaController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\PageCounterController;
+use App\Http\Controllers\NilaiController;
 //import java.io;
 
 
@@ -123,3 +124,8 @@ Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'hapuska
 
 //router pagecounter
 Route::get('/pagecounter', [PageCounterController::class, 'pageindex']);
+
+//route Nilai
+Route::get('/eas', [NilaiController::class, 'indexnilai']);
+Route::get('/eas/tambah', [NilaiController::class, 'tambahnilai']);
+Route::post('/eas/store', [NilaiController::class, 'storenilai']);
